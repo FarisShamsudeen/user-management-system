@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+
+
+body {
+    background-image: url(../Images/beautiful-green-field-scenery-picjumbo-com.jpg);
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: linear-gradient(180deg, rgba(12,84,109,1) 0%, rgba(220,229,226,1) 42%, rgba(211,218,199,1) 58%, rgba(157,158,48,1) 82%, rgba(101,143,6,1) 100%);
+    backdrop-filter: blur(20px);
+}
+
+.left-side {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.right-side {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    color: rgb(0, 37, 70);
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn-group .btn {
+    padding: 15px 30px;
+    margin: 0 10px;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-group .btn:hover {
+    background-color: #025aa5;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

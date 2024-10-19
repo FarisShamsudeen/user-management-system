@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/Styles/userLogin.css">
+
+<div id="particles-js" class="snow"></div>
+
+<main>
+  <div class="left-side"></div>
+
+  <div class="right-side">
+    <form method="post" action="/user/login">
+      <input type="text" name="message" id="message" value="{{{message}}}" hidden>
+
+      <div class="or">User Login Form</div>
+
+      <label for="email">Email</label>
+      <input type="text" placeholder="Enter Email" name="email" id="email"   />
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" />
+
+      <button type="submit" class="login-btn">Sign in</button>
+      <div class="links">
+        {{!-- <a href="#">Forgot password?</a> --}}
+        <a href="/user/register">Do not have an account?</a>
+        <a href="/admin/login">Are you admin?</a>
+      </div>
+    </form>
+  </div>
+</main>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("form").addEventListener("submit", formValidate);
+  })
+
+  const message = document.getElementById("message").value
+
+  if (message) {
+    Swal.fire(message)
+  }
+
+
+  function formValidate(e) {
+    e.preventDefault()
+
+    var email = document.getElementById("email").value
+    var password = document.getElementById("password").value
+
+    if (email == "" || password == "") {
+      Swal.fire({
+        title: "Form validation error",
+        text: "Please fill out all fields",
+        icon: "error"
+      });
+      return false;
+    }
+    e.target.submit()
+    return true
+  }
+
+
+</script>

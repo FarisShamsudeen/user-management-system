@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error Page</title>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: rgb(12, 84, 109);
+      background: linear-gradient(180deg, rgba(12, 84, 109, 1) 0%, rgba(220, 229, 226, 1) 42%, rgba(211, 218, 199, 1) 58%, rgba(157, 158, 48, 1) 82%, rgba(101, 143, 6, 1) 100%);
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+      background-color: #fff;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .left-side {
+      display: none;
+      /* Keeping it for layout consistency */
+    }
+
+    .right-side {
+      text-align: center;
+    }
+
+    .error-logo {
+      font-size: 30px;
+    }
+
+    .error-message {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d9534f;
+      margin: 20px 0;
+    }
+
+    .error-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .error-btn-group {
+      margin-top: 20px;
+    }
+
+    .error-btn-group .btn {
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: #0275d8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .error-btn-group .btn:hover {
+      background-color: #025aa5;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="left-side"></div>
+    <swal-title>{{{message}}}</swal-title>
+    <div class="right-side">
+      <div class="error-logo">
+        <h1>404</h1>
+      </div>
+      <div class="error-message">Oops! Something went wrong</div>
+      <div class="error-description">
+        We're sorry, but the page you requested could not be found or an error occurred.
+        Please try again or contact support if the issue persists.
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

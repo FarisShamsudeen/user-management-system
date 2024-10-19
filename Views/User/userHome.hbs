@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Home Page</title>
+    <link rel="stylesheet" href="/Styles/userHome.css">
+
+</head>
+
+<body>
+
+
+    <main>
+
+        <div class="left-side">
+            {{!-- <swal-title>{{{message </swal-title> --}}
+            <input type="text" name="message" id="message" value="{{{message}}}" hidden>
+
+            <div class="description">
+                <h2>Welcome {{this.email}}</h2>
+                <p>We are thrilled to have you on board! This platform is designed to provide you with an amazing
+                    experience. You can explore different features, connect with our community, and share your thoughts
+                    with others.</p>
+                <p>We are excited to have you as a part of our community. If you have any questions or need any help,
+                    feel free to reach out to us. We are always here to assist you.</p>
+            </div>
+            <div class="btn-group">
+                <a href="/user/logout">
+                <button class="btn">Logout</button>
+                </a>
+                
+                {{!-- <button class="btn" onclick="window.location.href='/user/login';">Login</button> --}}
+            </div>
+        </div>
+
+        <div class="right-side hero-image">
+            <img src="../Images/beautiful-green-field-scenery-picjumbo-com.jpg" alt="Welcome Image" />
+        </div>
+    </main>
+
+</body>
+
+</html>
+
+<script>
+
+    const message = document.getElementById("message").value
+
+    if (message) {
+        Swal.fire(message)
+    }
+
+</script>
